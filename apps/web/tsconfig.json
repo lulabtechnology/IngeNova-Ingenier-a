@@ -1,16 +1,22 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "jsx": "preserve",
-    "allowJs": false,
-    "strict": true,
     "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
     },
-    "baseUrl": "."
+    "types": ["node"]
   },
-  "include": ["app"]
+  "include": ["app", "next-env.d.ts"],
+  "exclude": ["node_modules"]
 }
