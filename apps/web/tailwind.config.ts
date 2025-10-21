@@ -4,13 +4,14 @@ export default {
   content: ["./app/**/*.{ts,tsx}", "./app/(site)/components/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      spacing: { 18: "4.5rem" }, /* opcional: habilita py-18/mt-18/etc. */
       colors: {
         bg: "#0A0D12",
         surface: "#0F141A",
         text: "#EAF2FF",
         muted: "#9BA7B6",
-        primary: "#00F2A9",   // verde-neón
-        secondary: "#5B8CFF", // azul eléctrico
+        primary: "#00F2A9",
+        secondary: "#5B8CFF",
         border: "#1A2330"
       },
       fontFamily: {
