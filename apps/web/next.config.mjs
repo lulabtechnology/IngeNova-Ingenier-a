@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: { appDir: true },
+  // Nota: En Next 13+ App Router ya viene por defecto. No usar experimental.appDir.
   images: { remotePatterns: [] }
 };
 export default nextConfig;
